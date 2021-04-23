@@ -65,8 +65,8 @@ def create_checkout_session():
                 },
             ],
             mode='payment',
-            success_url='http://localhost:5000' + '/success.html',
-            cancel_url='http://localhost:5000' + '/cancel.html',
+            success_url='http://kevinstestwebsite.com/success.html',
+            cancel_url='http://kevinstestwebsite.com/cancel.html',
         )
         return jsonify({'id': checkout_session.id})
     except Exception as e:
